@@ -1,0 +1,24 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email Id</th>
+            <th scope="col">Contact No</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pat of patient">
+            <td>{{ pat.id }}</td>
+            <td>{{ pat.name }}</td>
+            <td><a href="mailto:{{ pat.email }}">{{ pat.email }}</a></td>
+            <td>{{pat.mobno}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
